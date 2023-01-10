@@ -69,8 +69,9 @@ num5 = int(input("Enter a number: "))
 numbers.append(num5)
 print(numbers)
 
-largest = max(numbers)
-smallest = min(numbers)
+largest = numbers.sort()
+min = numbers[0]
+max = numbers[4]
 
-print("The largest value is", largest)
-print("The smallest value is", smallest)
+print("The largest value is", max)
+print("The smallest value is", min)
